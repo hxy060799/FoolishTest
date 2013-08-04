@@ -10,6 +10,8 @@
 
 @implementation GameLayer
 
+@synthesize winSize;
+
 +(CCScene*)scene{
     CCScene *scene=[CCScene node];
     CCLayer *layer=[GameLayer node];
@@ -23,16 +25,21 @@
     if(self=[super init]){
         
         [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"itemSprites.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"shapes.plist"];
         
-        CGSize winSize=[[CCDirector sharedDirector]winSize];
+        winSize=[[CCDirector sharedDirector]winSize];
         
-        CCSprite *sprite=[CCSprite spriteWithSpriteFrameName:@"umbrella.png"];
-        [sprite setScale:0.5];
-        [sprite setPosition:ccp(winSize.width/2,winSize.height/2)];
+        CCSprite *sprite=[CCSprite spriteWithSpriteFrameName:@"bluetriangle.png"];
+        [sprite setPosition:[self ccpHDWithX:480/2 y:320/2]];
         [self addChild:sprite];
+        NSLog(@"x:%f,y:%f",sprite.position.x,sprite.position.y);
     }
     
     return self;
+}
+
+-(CGPoint)ccpHDWithX:(CGFloat)x y:(CGFloat)y{
+	return CGPointMake(winSize.width/480*x,winSize.height/320*y);
 }
 
 @end

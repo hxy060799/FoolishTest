@@ -9,9 +9,10 @@
 #import "cocos2d.h"
 
 @interface GameLayer : CCLayer{
-    
+    CGSize winSize;
 }
 
+@property(assign,nonatomic)CGSize winSize;
 
 +(CCScene*)scene;
 
