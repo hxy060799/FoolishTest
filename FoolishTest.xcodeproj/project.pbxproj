@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A980789D17AD531F00E5B01C /* itemSprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = A980789B17AD531F00E5B01C /* itemSprites.plist */; };
+		A980789E17AD531F00E5B01C /* itemSprites.png in Resources */ = {isa = PBXBuildFile; fileRef = A980789C17AD531F00E5B01C /* itemSprites.png */; };
 		A99E16BE17AD46FC00661C6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99E16BD17AD46FC00661C6A /* QuartzCore.framework */; };
 		A99E16C017AD46FC00661C6A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99E16BF17AD46FC00661C6A /* OpenGLES.framework */; };
 		A99E16C217AD46FC00661C6A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99E16C117AD46FC00661C6A /* OpenAL.framework */; };
@@ -141,9 +143,12 @@
 		A99E186417AD46FE00661C6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A99E186317AD46FE00661C6A /* AppDelegate.m */; };
 		A99E186717AD46FE00661C6A /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A99E186617AD46FE00661C6A /* HelloWorldLayer.m */; };
 		A99E186A17AD46FE00661C6A /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A99E186917AD46FE00661C6A /* IntroLayer.m */; };
+		A9F817F717AD4CAE00859A90 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F817F617AD4CAE00859A90 /* GameLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A980789B17AD531F00E5B01C /* itemSprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = itemSprites.plist; sourceTree = "<group>"; };
+		A980789C17AD531F00E5B01C /* itemSprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itemSprites.png; sourceTree = "<group>"; };
 		A99E16BA17AD46FC00661C6A /* FoolishTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoolishTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99E16BD17AD46FC00661C6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A99E16BF17AD46FC00661C6A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -425,6 +430,8 @@
 		A99E186617AD46FE00661C6A /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		A99E186817AD46FE00661C6A /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		A99E186917AD46FE00661C6A /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		A9F817F517AD4CAE00859A90 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		A9F817F617AD4CAE00859A90 /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +498,8 @@
 				A99E186617AD46FE00661C6A /* HelloWorldLayer.m */,
 				A99E186817AD46FE00661C6A /* IntroLayer.h */,
 				A99E186917AD46FE00661C6A /* IntroLayer.m */,
+				A9F817F517AD4CAE00859A90 /* GameLayer.h */,
+				A9F817F617AD4CAE00859A90 /* GameLayer.m */,
 				A99E16D217AD46FC00661C6A /* Resources */,
 				A99E16EA17AD46FC00661C6A /* libs */,
 				A99E185E17AD46FE00661C6A /* Supporting Files */,
@@ -501,6 +510,8 @@
 		A99E16D217AD46FC00661C6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A980789B17AD531F00E5B01C /* itemSprites.plist */,
+				A980789C17AD531F00E5B01C /* itemSprites.png */,
 				A99E16D317AD46FC00661C6A /* Default.png */,
 				A99E16D517AD46FC00661C6A /* Default@2x.png */,
 				A99E16D717AD46FC00661C6A /* Default-568h@2x.png */,
@@ -942,6 +953,8 @@
 				A99E16E617AD46FC00661C6A /* Icon@2x.png in Resources */,
 				A99E16E917AD46FC00661C6A /* iTunesArtwork in Resources */,
 				A99E184217AD46FE00661C6A /* ChangeLog in Resources */,
+				A980789D17AD531F00E5B01C /* itemSprites.plist in Resources */,
+				A980789E17AD531F00E5B01C /* itemSprites.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,6 +1077,7 @@
 				A99E186417AD46FE00661C6A /* AppDelegate.m in Sources */,
 				A99E186717AD46FE00661C6A /* HelloWorldLayer.m in Sources */,
 				A99E186A17AD46FE00661C6A /* IntroLayer.m in Sources */,
+				A9F817F717AD4CAE00859A90 /* GameLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1120,6 +1134,7 @@
 				GCC_PREFIX_HEADER = FoolishTest/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"FoolishTest/libs/kazmath/include\"";
 				INFOPLIST_FILE = FoolishTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1139,6 +1154,7 @@
 				GCC_PREFIX_HEADER = FoolishTest/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"FoolishTest/libs/kazmath/include\"";
 				INFOPLIST_FILE = FoolishTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1169,6 +1185,7 @@
 				A99E186F17AD46FE00661C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
